@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    
+    <!-- source:media-type -> use max-width
+Se a foto for menor que x valor, a imagem de tamanho menor será carregada.
+A base é a imagem que você quer carregar. Acima dela, você vai colocando ela em tamanhos menores. Ex: 5 em cima do 10, que está em cima do 15.-->
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/yousuckcharlie.mp3" type="audio/mpeg">
+        <source src="midia/yousuckcharlie.ogg" type="audio/ogg">
+        <source src="midia/yousuckcharlie.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/yousuckcharlie.mp3">Clique aqui para baixar o arquivo.</a></p>
+    <!--A ORDEM É MUITO IMPORTANTE. Se você colocar o mp3 primeiro, ele vai tentar carregar ele primeiro, e assim vai. Vai de cima pra baixo.-->
+    </audio>
+
+</body>
+</html>

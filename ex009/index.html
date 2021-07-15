@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+ <!-- use o type em ol para selecionar o tipo de icone que vai ser usado na lista: 1, a, A, I, i-->
+    <h2>Listas não Ordenadas</h2>
+    <ul type="disc">
+        <li>Pão</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Batata</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+
+        <!--opçoes de type em ul: disc, circle, square -->
+    </ul>
+    <!--O fechamento da tag li é opcional-->
+
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"> <!--se vc quisesse q o primeiro item da lista 2 fosse o item 5, vc teria q inserir o start-->
+            <li>Python</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>Consoles</li>
+        <ul>
+            <li>jogo</li>
+            <ul type='disc'>
+                <li>jogo 1</li>
+                <li>jogo 2</li>
+            </ul>
+            <li>jogo</li>
+            <li>jogo</li>
+        </ul>
+        <li>Computador</li>
+        <ul>
+            <li>Overwatch</li>
+            <li>Osu</li>
+            <li>jogo</li>
+            <li>jogo</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt> <!--Termo-->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site</dd> <!--Descrição-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação da interatividade de um site</dd>
+    </dl>
+
+</body>
+</html>
